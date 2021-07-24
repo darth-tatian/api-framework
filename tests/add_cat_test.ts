@@ -16,7 +16,7 @@ describe('Функционал добавления кота', async () => {
 
   it('Добавление нового несуществующего кота', async () => {
     const response = await CoreApi.addCat(cats);
-
+    console.log(response.data.cats);
     if (response.data.cats[0].errorDescription) {
       assert.fail(
         `Произошла ошибка при добавлении кота: ${response.data.cats[0].errorDescription}`

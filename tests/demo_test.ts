@@ -1,17 +1,18 @@
 import { assert } from 'chai';
 import CoreApi from '../src/http/CoreApi';
 
+
 describe('Проверка функционала добавления котов', async () => {
   it('Получение кота по id', async () => {
-    const name = 'Вики';
+    const name = 'Балдрик';
 
-    const response = await CoreApi.getCatById(101368);
+    const response = await CoreApi.getCatById(22559011);
 
     assert.equal(response.data.cat.name, name, 'Имена не соответствуют');
   });
 
   it('Поиск существующего кота', async () => {
-    const expName = 'Балу';
+    const expName = 'Балдрик';
 
     const response = await CoreApi.searchCatByPartName(expName);
     if (response.status === 404) {
@@ -35,22 +36,22 @@ describe('Проверка функционала добавления кото�
 
   it('Проверка данных о коте', async () => {
     const cat_exp = {
-      id: 101368,
-      name: 'Вики',
-      description: 'Hdijd',
+      id: 2255901,
+      name: 'Балдрик',
+      description: null,
       tags: null,
-      gender: 'female',
-      likes: 560,
+      gender: 'male',
+      likes: 0,
       dislikes: 0,
     };
 
-    const response = await CoreApi.getCatById(101368);
+    const response = await CoreApi.getCatById(2255901);
 
     assert.deepEqual(response.data.cat, cat_exp);
   });
 
   it('Проверка что все коты из списка женского пола', async () => {
-    const catsIdList = [103775, 101377, 101437];
+    const catsIdList = [2255031, 2255254, 101359];
     const gender = `female`;
     const genderList = [];
 

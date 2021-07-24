@@ -25,7 +25,7 @@ describe('Тесты', () => {
     });
   });
 
-  it.skip('retries', function () {
+  it('retries', function () {
     this.retries(2);
     const currentRetry = this.test['_currentRetry'];
     const randomValue = getRandomInt(6);
