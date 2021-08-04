@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "d4e93feae1eef262b5be6958c122f7da",
-    "name" : "найти-удалить-проверить",
+    "uid" : "45ce4587305443b0206b5cd4a91e08dd",
+    "name" : "проверка лайков и дизлайков",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 3
+      "total" : 2
     }
   } ]
 }

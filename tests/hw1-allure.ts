@@ -67,7 +67,6 @@ describe('найти-удалить-проверить', async () => {
       await allure.step(
         'выполнено удаление кота',
         () => {
-          //allure.attachment('server response', del_response.status, 'application/json');
           assert.ok(del_response.status === 200);
         }
       );

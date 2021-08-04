@@ -1,0 +1,209 @@
+{
+  "uid" : "438c294b9ba867c0",
+  "name" : "найти случайного кота-запомнить количество дизлайков-продизлайкать-проверить количество дизлайков",
+  "fullName" : "найти случайного кота-запомнить количество дизлайков-продизлайкать-проверить количество дизлайков",
+  "historyId" : "d1c95b67fa05d1bbe7255b22d9c91566",
+  "time" : {
+    "start" : 1628083870829,
+    "stop" : 1628083871872,
+    "duration" : 1043
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "выполнен запрос GET метода getAllCats",
+      "time" : {
+        "start" : 1628083868328,
+        "stop" : 1628083868329,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "выбрали случайную букву А",
+      "time" : {
+        "start" : 1628083868329,
+        "stop" : 1628083868329,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "выбрали случайный номер 74  из 80 в списке имён на А",
+      "time" : {
+        "start" : 1628083868329,
+        "stop" : 1628083868329,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "выбрали случайного кота с id 103292",
+      "time" : {
+        "start" : 1628083868329,
+        "stop" : 1628083868329,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "выполняется запрос GET /get-by-id c параметром 103292",
+      "time" : {
+        "start" : 1628083870830,
+        "stop" : 1628083871038,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8838fe5823c59d59",
+        "name" : "случайно выбранный кот",
+        "source" : "8838fe5823c59d59.json",
+        "type" : "application/json",
+        "size" : 135
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "что за кот и сколько дизлайков было?",
+      "time" : {
+        "start" : 1628083871038,
+        "stop" : 1628083871039,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d41ed365fe50d8fd",
+        "name" : "id кота, которого задизлайкаем",
+        "source" : "d41ed365fe50d8fd.json",
+        "type" : "application/json",
+        "size" : 6
+      }, {
+        "uid" : "786e9b78662f4ed6",
+        "name" : "количество лайков до задизлайкивания",
+        "source" : "786e9b78662f4ed6.json",
+        "type" : "application/json",
+        "size" : 1
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "выполняется запрос GET /get-by-id c параметром 103292",
+      "time" : {
+        "start" : 1628083871669,
+        "stop" : 1628083871871,
+        "duration" : 202
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "сколько дизлайков стало?",
+      "time" : {
+        "start" : 1628083871871,
+        "stop" : 1628083871871,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ab791c74f7d4c8a6",
+        "name" : "количество дизлайков после",
+        "source" : "ab791c74f7d4c8a6.json",
+        "type" : "application/json",
+        "size" : 1
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "проверка лайков и дизлайков"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "438c294b9ba867c0.json",
+  "parameterValues" : [ ]
+}
